@@ -5,11 +5,18 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Dockerhub: https://hub.docker.com/r/dannaire/react-kelompok5/tags <br>
 Vercel: https://kelompok5-react.vercel.app/
-## technology
+## Technology
 
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+
+## Pages
+
+- Page Home
+- Page Detail
+- Page Calculator
+- 
 ## Build Docker
 
 docker build . -t react-kelompok5
