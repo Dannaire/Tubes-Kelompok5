@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Run Docker
+
+docker run -p 8081:80 react-kelompok5
+
 ## Available Scripts
 
 In the project directory, you can run:
