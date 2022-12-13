@@ -51,7 +51,7 @@ Vercel: https://kelompok5-react.vercel.app/
 ## Contributor
 -Muhammad Rasyid Ridho <br>
 -Muhammad Zidane Fajarianto <br>
--Nabila Farahana @nabilafrhn <br>
+-Nabila Farahana  <br>
 -Novita Azka Maghfira 
 
 
