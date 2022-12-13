@@ -16,14 +16,14 @@ Vercel: https://kelompok5-react.vercel.app/
 - Page Home
 - Page Detail
 - Page Calculator
-- 
+
 ## Build Docker
 
-docker build . -t react-kelompok5
+- docker build . -t react-kelompok5
 
 ## Run Docker
 
-docker run -p 8081:80 react-kelompok5
+- docker run -p 8081:80 react-kelompok5
 
 ## Home
 ![2022-12-13 (7)](https://user-images.githubusercontent.com/101534120/207384633-8224c543-241d-4a2c-8f5e-289a986e5dc0.png)
