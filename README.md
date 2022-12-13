@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Build Docker
+
+docker build . -t react-kelompok5
+
 ## Run Docker
 
 docker run -p 8081:80 react-kelompok5
