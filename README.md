@@ -49,10 +49,10 @@ Vercel: https://kelompok5-react.vercel.app/
 ![2022-12-13 (9)](https://user-images.githubusercontent.com/101534120/207385161-aebeb726-5053-4fd2-a173-4bbad7bd195d.png)
 
 ## Contributor
--Muhammad Rasyid Ridho @Rasyid15
--Muhammad Zidane Fajarianto @Dannaire
--Nabila Farahana @nabilafrhn
--Novita Azka Maghfira @nowwie
+-Muhammad Rasyid Ridho <br>
+-Muhammad Zidane Fajarianto <br>
+-Nabila Farahana @nabilafrhn <br>
+-Novita Azka Maghfira 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
