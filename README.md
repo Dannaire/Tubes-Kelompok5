@@ -10,7 +10,15 @@ docker build . -t react-kelompok5
 
 docker run -p 8081:80 react-kelompok5
 
-## Available Scripts
+## Home
+![2022-12-13 (7)](https://user-images.githubusercontent.com/101534120/207384633-8224c543-241d-4a2c-8f5e-289a986e5dc0.png)
+
+## Detail
+![2022-12-13 (8)](https://user-images.githubusercontent.com/101534120/207384909-4f912914-2dc5-4fef-a441-0eb76cb7ae87.png)
+
+## Calculator
+![2022-12-13 (10)](https://user-images.githubusercontent.com/101534120/207385123-f6a1abd6-5766-48c3-85c8-527ef3a0cef8.png)
+![2022-12-13 (9)](https://user-images.githubusercontent.com/101534120/207385161-aebeb726-5053-4fd2-a173-4bbad7bd195d.png)
 
 In the project directory, you can run:
 
