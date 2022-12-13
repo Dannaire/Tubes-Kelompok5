@@ -48,6 +48,13 @@ Vercel: https://kelompok5-react.vercel.app/
 ![2022-12-13 (10)](https://user-images.githubusercontent.com/101534120/207385123-f6a1abd6-5766-48c3-85c8-527ef3a0cef8.png)
 ![2022-12-13 (9)](https://user-images.githubusercontent.com/101534120/207385161-aebeb726-5053-4fd2-a173-4bbad7bd195d.png)
 
+## Contributor
+-Muhammad Rasyid Ridho @Rasyid15
+-Muhammad Zidane Fajarianto @Dannaire
+-Nabila Farahana @nabilafrhn
+-Novita Azka Maghfira @nowwie
+
+
 <!-- MARKDOWN LINKS & IMAGES -->
 
 [js]: https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E
