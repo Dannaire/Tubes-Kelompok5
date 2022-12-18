@@ -26,9 +26,14 @@ const Calculator = () => {
 
             const oper = item.display !== 'x' ? item.display : '*';
             setExpression(expression + oper);
-
-     
         }
+        if (item.action === BTN_ACTIONS.DIVIDE) {
+            addAnimSpan(item.display);
+
+            const divide = item.display !== '÷' ? item.display : '/';
+            setExpression(expression + divide);
+        }
+
         if (item.action === BTN_ACTIONS.PER) {
             addAnimSpan(item.display);
 
@@ -41,6 +46,15 @@ const Calculator = () => {
             expDiv.innerHTML = '';
 
             setExpression('');
+        }
+        if (item.action === BTN_ACTIONS.BACKSPACE) {
+            let output = expression.split('');
+            output.pop()
+            let result = output.join('');
+            console.log(result)
+
+            expDiv.innerHTML = result;
+            setExpression(result)
         }
 
         if (item.action === BTN_ACTIONS.CALC) {
@@ -68,7 +82,7 @@ const Calculator = () => {
                     cloneNode.innerHTML = 'Syntax err';
                 }, 200);
             } finally {
-                console.log('calc complete');
+                console.log('Calc success');
             }
         }
     }
@@ -92,55 +106,55 @@ const Calculator = () => {
 
     return (
         <div className="calculate">
-           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" />
-  <link rel="stylesheet" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js" />      
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" />
+            <link rel="stylesheet" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js" />
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
             <nav>
-    <div className="logo">
-      Kelompok 5
-    </div>
-    <input type="checkbox" id="click" />
-    <label htmlFor="click" className="menu-btn">
-      <i className="fas fa-bars" />
-    </label>
-    <ul>
-    <li><Link to="/">Home</Link></li>
-    <li><Link to="/">Profile</Link></li>
-    <li><Link to="/">Biodata</Link></li> 
-    <li><Link to="/Detail">Detail</Link></li>
-    <li><Link to="/Calculator">Calculator</Link></li>
-    <li><Link to="/">Member</Link></li> 
-    </ul>
-  </nav>
-  <main>
-    <section>
+                <div className="logo">
+                    Kelompok 5
+                </div>
+                <input type="checkbox" id="click" />
+                <label htmlFor="click" className="menu-btn">
+                    <i className="fas fa-bars" />
+                </label>
+                <ul>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/">Profile</Link></li>
+                    <li><Link to="/">Biodata</Link></li>
+                    <li><Link to="/Detail">Detail</Link></li>
+                    <li><Link to="/Calculator">Calculator</Link></li>
+                    <li><Link to="/">Member</Link></li>
+                </ul>
+            </nav>
+            <main>
+                <section>
+                    <div className="calculator">
+                        <div className="calculator__result">
+                            <div ref={expRef} className="calculator_result_exp"></div>
+                            <div className="calculator_result_exp"></div>
+                        </div>
+                        <div ref={btnsRef} className="calculator__btns">
+                            {
+                                btns.map((item, index) => (
+                                    <button
+                                        key={index}
+                                        className={item.class}
+                                        onClick={() => btnClick(item)}
+                                    >
+                                        {item.display}
+                                    </button>
+                                ))
+                            }
 
-    <div className="calculator">
-            <div className="calculator__result">
-                <div ref={expRef} className="calculator_result_exp"></div>
-                <div className="calculator_result_exp"></div>
-            </div>
-            <div ref={btnsRef} className="calculator__btns">
-                {
-                    btns.map((item, index) => (
-                        <button
-                            key={index}
-                            className={item.class}
-                            onClick={() => btnClick(item)}
-                        >
-                            {item.display}
-                        </button>
-                    ))
-                }
-           
-            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
         </div>
-    </section>
-  </main>
-  
-        </div>
+
     );
 }
 
