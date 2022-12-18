@@ -45,9 +45,8 @@ Vercel: https://kelompok5-react.vercel.app/
 ![2022-12-13 (8)](https://user-images.githubusercontent.com/101534120/207384909-4f912914-2dc5-4fef-a441-0eb76cb7ae87.png)
 
 ## Calculator
-
-![2022-12-18](https://user-images.githubusercontent.com/101534120/208298908-a7c510a4-9257-4b53-9598-cc8b8d871ac4.png)
-![2022-12-18 (1)](https://user-images.githubusercontent.com/101534120/208298917-f788af07-e181-4a37-8c7f-3e96f579d3c5.png)
+![Screenshot (873)](https://user-images.githubusercontent.com/99931023/208299089-4fb32add-3a55-4c10-806f-bbf9550ba208.png)
+![Screenshot (874)](https://user-images.githubusercontent.com/99931023/208299093-4d2effce-f325-496c-b3ff-8b24c079f26b.png)
 
 ## Contributor
 -Muhammad Rasyid Ridho <br>
