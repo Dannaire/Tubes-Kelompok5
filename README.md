@@ -54,7 +54,7 @@ Vercel: https://kelompok5-react.vercel.app/
 -Novita Azka Maghfira 
 
 # Reference
--Calculator https://github.com/trananhtuat/react-calculator
+-Calculator https://github.com/trananhtuat/react-calculator , <br> https://stackoverflow.com/questions/68179055/react-calculator-how-to-prevent-multiple-decimals-in-a-number-using-math-expres
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
