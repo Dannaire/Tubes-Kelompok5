@@ -15,10 +15,7 @@ Vercel: https://kelompok5-react.vercel.app/
 
 ## Technology
 
-* ![HTML][HTML]
-* ![CSS3][CSS3]
 * [![Sass][Sass]][Sass-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JavaScript][js]][js-url]
 * [![Node][Node.js]][Node-url]
 * [![React][React.js]][React-url]
@@ -45,14 +42,24 @@ Vercel: https://kelompok5-react.vercel.app/
 ![2022-12-13 (8)](https://user-images.githubusercontent.com/101534120/207384909-4f912914-2dc5-4fef-a441-0eb76cb7ae87.png)
 
 ## Calculator
+
 ![Screenshot (873)](https://user-images.githubusercontent.com/99931023/208299089-4fb32add-3a55-4c10-806f-bbf9550ba208.png)
 ![Screenshot (874)](https://user-images.githubusercontent.com/99931023/208299093-4d2effce-f325-496c-b3ff-8b24c079f26b.png)
+=======
+
+![2022-12-21 (2)](https://user-images.githubusercontent.com/101534120/208843128-cd80fbb5-0718-4cff-a5b5-c116bfca0e6f.png)
+
+![2022-12-21 (4)](https://user-images.githubusercontent.com/101534120/208843270-89df74db-b50b-47e0-b433-6338e202e05b.png)
+
 
 ## Contributor
 -Muhammad Rasyid Ridho <br>
 -Muhammad Zidane Fajarianto <br>
 -Nabila Farahana  <br>
 -Novita Azka Maghfira 
+
+# Reference
+-Calculator https://github.com/trananhtuat/react-calculator , <br> https://stackoverflow.com/questions/68179055/react-calculator-how-to-prevent-multiple-decimals-in-a-number-using-math-expres
 
 
 <!-- MARKDOWN LINKS & IMAGES -->

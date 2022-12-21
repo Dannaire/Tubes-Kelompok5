@@ -10,6 +10,7 @@ const Calculator = () => {
     const expRef = useRef(null);
 
     const [expression, setExpression] = useState('');
+    const operation = ["+", "-", "/", "*"];
 
     useEffect(() => {
         const btns = Array.from(btnsRef.current.querySelectorAll('button'));
@@ -22,24 +23,30 @@ const Calculator = () => {
         if (item.action === BTN_ACTIONS.THEME) document.body.classList.toggle('dark');
 
         if (item.action === BTN_ACTIONS.ADD) {
-            addAnimSpan(item.display);
+            // addAnimSpan(item.display);
 
             const oper = item.display !== 'x' ? item.display : '*';
-            setExpression(expression + oper);
-        }
-        if (item.action === BTN_ACTIONS.DIVIDE) {
-            addAnimSpan(item.display);
+            // setExpression(expression + oper);
+            const value = expression.split("");
+            addAnimSpan(expression + oper);
+            if (operation.includes(value[value.length - 1]) && oper === "%") {
+        addAnimSpan(expression);
+        return;
+      }
 
-            const divide = item.display !== '÷' ? item.display : '/';
-            setExpression(expression + divide);
-        }
+      if (
+        operation.includes(value[value.length - 1]) &&
+        operation.includes(oper)
+      ) {
+        value.splice(value.length - 1, 1, oper);
+        let result = value.join("");
 
-        if (item.action === BTN_ACTIONS.PER) {
-            addAnimSpan(item.display);
-
-            const percent = item.display !== '%' ? item.display : '/100';
-            setExpression(expression + percent);
+        setExpression(expression);
+        addAnimSpan(result);
+        return;
+      }
         }
+     
 
         if (item.action === BTN_ACTIONS.DELETE) {
             expDiv.parentNode.querySelector('div:last-child').innerHTML = '';
@@ -68,7 +75,15 @@ const Calculator = () => {
             const transform = `translateY(${-(expDiv.offsetHeight + 10) + 'px'}) scale(0.4)`;
 
             try {
-                let res = eval(expression);
+                let value = "";
+                if (expression.includes("%")) {
+                  value = expression.replace("%", "/100");
+
+                } else {
+                  value = expression;
+                  
+                }
+                let res = eval(value);
 
                 setExpression(res.toString());
                 setTimeout(() => {
@@ -86,14 +101,16 @@ const Calculator = () => {
             }
         }
     }
-
     const addAnimSpan = (content) => {
         const expDiv = expRef.current;
-        const span = document.createElement('span');
-
+        const span = document.createElement("span");
+    
+        expDiv.innerHTML = "";
         span.innerHTML = content;
-        span.style.opacity = '0';
+        span.style.opacity = "0";
         expDiv.appendChild(span);
+    
+        setExpression(content.toString());
 
         const width = span.offsetWidth + 'px';
         span.style.width = '0';
