@@ -78,8 +78,10 @@ const Calculator = () => {
                 let value = "";
                 if (expression.includes("%")) {
                   value = expression.replace("%", "/100");
+
                 } else {
                   value = expression;
+                  
                 }
                 let res = eval(value);
 
