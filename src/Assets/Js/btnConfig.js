@@ -85,8 +85,8 @@ export const btns = [{
     },
     {
 
-        display: '÷',
-        action: BTN_ACTIONS.DIVIDE,
+        display: '/',
+        action: BTN_ACTIONS.ADD,
         class: 'btn__op'
     },
     {

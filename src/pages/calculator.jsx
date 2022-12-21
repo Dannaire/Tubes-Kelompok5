@@ -46,12 +46,7 @@ const Calculator = () => {
         return;
       }
         }
-        if (item.action === BTN_ACTIONS.DIVIDE) {
-            addAnimSpan(item.display);
-
-            const divide = item.display !== '÷' ? item.display : '/';
-            setExpression(expression + divide);
-        }
+     
 
         if (item.action === BTN_ACTIONS.DELETE) {
             expDiv.parentNode.querySelector('div:last-child').innerHTML = '';
