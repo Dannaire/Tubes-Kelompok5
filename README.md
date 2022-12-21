@@ -15,10 +15,7 @@ Vercel: https://kelompok5-react.vercel.app/
 
 ## Technology
 
-* ![HTML][HTML]
-* ![CSS3][CSS3]
 * [![Sass][Sass]][Sass-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JavaScript][js]][js-url]
 * [![Node][Node.js]][Node-url]
 * [![React][React.js]][React-url]
