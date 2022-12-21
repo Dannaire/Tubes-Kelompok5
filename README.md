@@ -56,7 +56,7 @@ Vercel: https://kelompok5-react.vercel.app/
 -Nabila Farahana  <br>
 -Novita Azka Maghfira 
 
-#Refference
+# Reference
 -Calculator https://github.com/trananhtuat/react-calculator
 
 
